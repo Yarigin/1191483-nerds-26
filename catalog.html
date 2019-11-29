@@ -7,12 +7,12 @@
 </head>
 
 <body>
-  <header>
+  <header class="page-header">
     <div class="logo">
       <a class="link-logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс"></a>
     </div>
-    <nav class="studio-nav">
-      <ul class="list-nav">
+    <nav class="navigation">
+      <ul class="list-navigation">
         <li class="item-nav"><a href="index.html">Студия</a></li>
         <li class="item-nav"><a href="">Клиенты</a></li>
         <li class="item-nav"><a class="active">Магазин</a></li>
@@ -24,6 +24,7 @@
     </nav>
     <h1>Магазин готовых шаблонов</h1>
   </header>
+  <main class="page-catalog">
   <aside>
     <form action="" method="post">
       <fieldset class="price">
@@ -82,11 +83,9 @@
           </li>
         </ul>
       </fieldset>
-      <button type="submit">Показать</button>
+      <button class="btn" type="submit">Показать</button>
     </form>
   </aside>
-  <main>
-    <article>
       <div class="user-sort">
         <p>Сортировать:</p>
         <ul class="list-sort">
@@ -94,12 +93,13 @@
           <li class="item-sort"><a href="">По типу</a></li>
           <li class="item-sort"><a href="">По названию</a></li>
         </ul>
-        <ul class="list-btn-sort">
-          <li class="btn-sort"><a class="btn-up" href="">Вверх</a></li>
-          <li class="btn-sort"><a class="btn-down" href="">Вниз</a></li>
+        <ul class="list-arrows">
+          <li class="item-arrows"><a class="arrows-up" href="">Вверх</a></li>
+          <li class="item-arrows"><a class="arrows-down" href="">Вниз</a></li>
         </ul>
       </div>
       <section class="catalog">
+        <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
             <div class="wrap-img-catalog">
@@ -172,40 +172,52 @@
         <a href="" class="next">следующая</a>
       </div>
       <section class="route">
+        <h2 class="visually-hidden">Контактные данные</h2>
         <div class="map">
           <img src="img/png/map.png" width="1725" height="808" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75">
         </div>
         <div class="map-marker">
           <img src="img/png/map-marker.png" width="231" height="190" alt="Маркер">
         </div>
-        <div class="info-nerds">
+        <div class="kontakt-nerds">
           <p>Nerds desing studio</p>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.</p>
-          <a href="">+7 (812) 275-75-75</a>
-          <button>Напишите нам</button>
+          <a href="tel: +78122757575">+7 (812) 275-75-75</a>
+          <a href="">Напишите нам</a>
         </div>
       </section>
-    </article>
   </main>
-  <footer>
-    <section class="social-networks">
-      <ul class="list-social-networks">
-        <li class="vk">
+  <footer class="page-footer">
+    <section class="socials">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <ul class="list-socials">
+        <li class="item-socials-vk">
           <a href="https://vk.com" aria-label="Группа Вконтакте"><img src="img/icon/vk-icon.svg" width="26" height="15" alt="Вконтакте">Вконтакте</a>
         </li>
-        <li class="fb">
+        <li class="item-socials-fb">
           <a href="https://facebook.com" aria-label="Группа в Фейсбук"><img src="img/icon/fb-icon.svg" width="12" height="22" alt="Фейсбук">Фейсбук</a>
         </li>
-        <li class="insta">
+        <li class="item-socials-insta">
           <a href="https://instagram.com" aria-label="Пост в Инстаграм"><img src="img/icon/insta-icon.svg" width="21" height="21" alt="Инстаграм">Инстаграм</a>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="subscribe">
+      <h2 class="visually-hidden">Для друзей</h2>
       <p>Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
+   <div class="popup">
+    <p>Напишите нам</p>
+     <form action="" method="post">
+       <label>Ваше имя:<input type="text" name="name" value="" placeholder="Имя Фамилия"></label>
+       <label>Ваш e-mail:<input type="text" name="e-mail" value="" placeholder="email@example.com"></label>
+       <p>Текст письма:</p>
+       <textarea name="text" id="text-field" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+     </form>
+      <button class="btn">Отправить</button>
+   </div>
 </body>
 
 </html>
