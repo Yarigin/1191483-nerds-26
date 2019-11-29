@@ -12,36 +12,36 @@
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
     </div>
     <nav class="navigation">
-      <ul class="list-navigation">
-        <li class="item-nav"><a href="index.html">Студия</a></li>
-        <li class="item-nav"><a href="">Клиенты</a></li>
-        <li class="item-nav"><a href="catalog.html">Магазин</a></li>
-        <li class="item-nav"><a href="">Контакты</a></li>
+      <ul class="navigation-list">
+        <li class="navigation-item"><a class="navigation-link" href="index.html">Студия</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="">Клиенты</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="catalog.html">Магазин</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="">Контакты</a></li>
       </ul>
       <div class="basket">
-        <a href="">Корзина</a>
+        <a class="basket-link" href="">Корзина</a>
       </div>
     </nav>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Студия дизайна Нердс</h1>
-    <section class="slide-show">
+    <section class="slideshow">
       <h2 class="visually-hidden">Наши слоганы</h2>
-      <ul class="slide-list">
-        <li class="slide-item">
-          <div class="slide-img-wrap"><img src="img/png/slide1.png" width="698" height="413" alt="Слайд1"></div>
+      <ul class="slideshow-list">
+        <li class="slideshow-item">
+          <div class="img-wrap"><img src="img/png/slide1.png" width="698" height="413" alt="Слайд1"></div>
           <p>Долго, дорого,<br> скрупулезно.</p>
           <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
           <a href="">Узнать больше</a>
         </li>
-        <li class="slide-item">
-          <div class="slider-img"><img src="img/png/slide2.png" width="663" height="430" alt="Слайд2"></div>
+        <li class="slideshow-item">
+          <div class="img-wrap"><img src="img/png/slide2.png" width="663" height="430" alt="Слайд2"></div>
           <p>Любим математику<br> как никто другой</p>
           <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
           <a href="">Узнать больше</a>
         </li>
-        <li class="slide-item">
-          <div class="slider-img"><img src="img/png/slide3.png" width="739" height="411" alt="Слайд3"></div>
+        <li class="slideshow-item">
+          <div class="img-wrap"><img src="img/png/slide3.png" width="739" height="411" alt="Слайд3"></div>
           <p>Только ночь,<br> только хардкор</p>
           <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
           <a href="">Узнать больше</a>
@@ -50,7 +50,7 @@
     </section>
     <section class="development">
       <h2 class="visually-hidden">Что мы можем предложить</h2>
-      <div class="dev-img-wrap">
+      <div class="img-wrap">
         <img src="img/png/illustration-1.png" width="300" height="146" alt="изображение веб сайта">
       </div>
       <h3>Веб сайты</h3>
@@ -58,7 +58,7 @@
       <a href="">Заказать</a>
     </section>
     <section class="development">
-      <div class="dev-img-wrap">
+      <div class="img-wrap">
         <img src="img/png/illustration-2.png" width="300" height="146" alt="картинка с гаджетами">
       </div>
       <h3>Приложения</h3>
@@ -66,7 +66,7 @@
       <a href="">Заказать</a>
     </section>
     <section class="development">
-      <div class="dev-img-wrap">
+      <div class="img-wrap">
         <img src="img/png/illustration-3.png" width="300" height="146" alt="картинка с презентацией">
       </div>
       <h3>Презентации</h3>
@@ -79,14 +79,13 @@
         <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
         <p>Выполняем заказы на разработку:</p>
-        <ul class="list-services">
-          <li class="item-services">Веб-сайтов любой сложности</li>
-          <li class="item-services">Мобильных приложений для iOS и Android</li>
-          <li class="item-services">Слайдшоу и видео для корпоративных презентаций</li>
+        <ul class="services-list">
+          <li class="services-item">Веб-сайтов любой сложности</li>
+          <li class="services-item">Мобильных приложений для iOS и Android</li>
+          <li class="services-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
-    </section>
-    <section class="table">
+    <div class="table">
       <h2 class="visually-hidden">На правах рекламы</h2>
       <div class="logo-table">
         <img src="img/png/nerds-illustration.png" width="360" height="208" alt="Картинка">
@@ -104,21 +103,22 @@
           <td>Минимальная предоплата</td>
         </tr>
       </table>
+    </div>
     </section>
     <section class="partners">
       <h2 class="visually-hidden">Наши партнеры</h2>
-        <ul class="list-partners">
-          <li class="item-partners">
-            <a href=""><img src="img/png/logo-1.png" width="199" height="60" alt="HTML Academy"></a>
+        <ul class="partners-list">
+          <li class="partners-item">
+            <a class="partners-link" href=""><img src="img/png/logo-1.png" width="199" height="60" alt="HTML Academy"></a>
           </li>
-          <li class="item-partners">
-            <a href=""><img src="img/png/logo-2.png" width="209" height="90" alt="Barbershop Borodinski"></a>
+          <li class="partners-item">
+            <a class="partners-link" href=""><img src="img/png/logo-2.png" width="209" height="90" alt="Barbershop Borodinski"></a>
           </li>
-          <li class="item-partners">
-            <a href=""><img src="img/png/logo-3.png" width="185" height="52" alt="Pink"></a>
+          <li class="partners-item">
+            <a class="partners-link" href=""><img src="img/png/logo-3.png" width="185" height="52" alt="Pink"></a>
           </li>
-          <li class="item-partners">
-            <a href=""><img src="img/png/logo-4.png" width="173" height="84" alt="Mishka"></a>
+          <li class="partners-item">
+            <a class="partners-link" href=""><img src="img/png/logo-4.png" width="173" height="84" alt="Mishka"></a>
           </li>
         </ul>
     </section>
@@ -130,10 +130,10 @@
       <div class="map-marker">
         <img src="img/png/map-marker.png" width="231" height="190" alt="Маркер">
       </div>
-      <div class="kontakt-nerds">
+      <div class="contacts-nerds">
         <p>Nerds desing studio</p>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.</p>
-        <a href="tel:+78122757575">.+7 (812) 275-75-75</a>
+        <a href="tel:+78122757575">+7 (812) 275-75-75</a>
         <a href="">Напишите нам</a>
       </div>
     </section>
@@ -141,20 +141,20 @@
   <footer class="page-footer">
     <section class="socials">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="list-socials">
-        <li class="item-socials-vk">
+      <ul class="socials-list">
+        <li class="socials-item vk">
           <a href="https://vk.com" aria-label="Группа Вконтакте"><img src="img/icon/vk-icon.svg" width="26" height="15" alt="Вконтакте">Вконтакте
           </a>
         </li>
-        <li class="item-socials-fb">
+        <li class="socials-item fb">
           <a href="https://facebook.com/" aria-label="Группа в Фейсбук"><img src="img/icon/fb-icon.svg" width="12" height="22" alt="Фейсбук">Фейсбук</a>
         </li>
-        <li class="item-socials-insta">
+        <li class="socials-item insta">
           <a href="https://instagram.com/" aria-label="Пост в Инстаграм"><img src="img/icon/insta-icon.svg" width="21" height="21" alt="Инстаграм">Инстаграм</a>
         </li>
       </ul>
     </section>
-    <section class="subscribe">
+    <section class="discounts-friends">
       <h2 class="visually-hidden">Для друзей</h2>
       <p>Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -163,12 +163,11 @@
   <div class="popup">
     <p>Напишите нам</p>
      <form action="" method="post">
-       <label>Ваше имя:<input type="text" name="name" value="" placeholder="Имя Фамилия"></label>
-       <label>Ваш e-mail:<input type="text" name="e-mail" value="" placeholder="email@example.com"></label>
-       <p>Текст письма:</p>
-       <textarea name="text" id="text-field" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+       <label>Ваше имя:<input type="text" name="name" placeholder="Имя Фамилия"></label>
+       <label>Ваш e-mail:<input type="text" name="e-mail" placeholder="email@example.com"></label>
+       <label>Текст письма:<textarea name="message" id="message" placeholder="В свободной форме"></textarea></label>
      </form>
-      <button class="btn">Отправить</button>
+      <button type="submit" class="btn">Отправить</button>
    </div>
 </body>
 
