@@ -47,7 +47,9 @@ html {
   box-sizing: border-box;
 }
 
-*,*::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -87,12 +89,11 @@ a {
 }
 
 .btn {
+  display: inline-block;
   padding: 18px 53px;
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
@@ -129,6 +130,10 @@ a {
   margin-right: 45px;
 }
 
+.navigation-item:last-child {
+  margin-right: 0;
+}
+
 .navigation-link {
   font-family: roboto;
   font-size: 16px;
@@ -147,13 +152,11 @@ a {
 
 /*    Style  main   */
 
-.slideshow-inner {
-  background-color: #eeeeee;
-}
-
 .slideshow {
   position: relative;
   margin-bottom: 80px;
+  background-color: #eeeeee;
+
 }
 
 .slideshow-list {
@@ -166,18 +169,27 @@ a {
   display: flex;
 }
 
-.item-text {
+.slideshow-item .item-text {
   min-width: 380px;
   margin-top: 84px;
 }
 
-.slideshow .title-text {
+.slideshow-item .title-text {
   margin-top: 0;
   min-height: 100px;
   font-family: roboto;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
+}
+
+.slideshow-item .text {
+  margin-bottom: 42px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #283136;
 }
 
 .slideshow .img-wrap {
@@ -194,6 +206,37 @@ a {
 
 .development-content {
   width: 300px;
+}
+
+.development-content h3 {
+  margin-top: 26px;
+  margin-bottom: 26px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.development-contet p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #283136;
+}
+
+.development-content .btn {
+  margin-top: 35px;
+}
+
+.development-content .green {
+  background-color: #00ca74;
+}
+
+.development-content .yellow {
+  background-color: #efc84a;
 }
 
 .info {
@@ -235,8 +278,7 @@ a {
 .services-item {
   margin-bottom: 40px;
   font-family: roboto;
-  font-size: 16px
-  line-height: 24px;
+  font-size: 16px line-height: 24px;
   color: #283136;
 
 }
@@ -295,11 +337,13 @@ a {
 .route {
   display: flex;
   align-items: center;
+  min-height: 416px;
 }
 
 .map {
   position: absolute;
-  min-height: 416px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .contacts-nerds {
@@ -310,6 +354,73 @@ a {
   background-color: #ffffff;
 }
 
+.contacts-nerds .title-text {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.contacts-nerds .text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #666666;
+}
+
+.contacts-nerds .tel {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #666666;
+}
+
 .contacts-nerds .btn {
+  margin-top: 37px;
   padding: 19px 45px;
+}
+
+/*   Style  footer  */
+
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  height: 217px;
+}
+
+.socials-list {
+  display: flex;
+}
+
+.socials-item {
+  margin-right: 72px;
+}
+
+.socials-item:last-child {
+  margin-right: 0;
+}
+
+.discounts-friends {
+  margin-left: 168px;
+}
+
+.discounts-friends .title-text {
+   font-family: Roboto;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36;
+  color: #000000;
+}
+
+.discouns-friends .text {
+   font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #444444;
 }

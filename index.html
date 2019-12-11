@@ -29,8 +29,8 @@
   </header>
   <main class="main-page">
     <h1 class="visually-hidden">Студия дизайна Нердс</h1>
-    <div class="slideshow-inner">
-      <section class="slideshow container">
+    <section class="slideshow">
+      <div class="container">
         <h2 class="visually-hidden">Наши слоганы</h2>
         <ul class="slideshow-list">
           <li class="slideshow-item active">
@@ -58,8 +58,8 @@
             <div class="img-wrap"><img src="img/png/slide3.png" width="739" height="411" alt="Слайд3"></div>
           </li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
     <div class="container">
       <div class="development">
         <section class="development-content">
@@ -69,7 +69,7 @@
           </div>
           <h3>Веб сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-          <a class="btn-red" href="">Заказать</a>
+          <a class="btn" href="">Заказать</a>
         </section>
         <section class="development-content">
           <div class="img-wrap">
@@ -77,7 +77,7 @@
           </div>
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="btn-green" href="">Заказать</a>
+          <a class="btn green" href="">Заказать</a>
         </section>
         <section class="development-content">
           <div class="img-wrap">
@@ -85,7 +85,7 @@
           </div>
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="btn-yellow" href="">Заказать</a>
+          <a class="btn yellow" href="">Заказать</a>
         </section>
       </div>
     </div>
@@ -148,36 +148,39 @@
         <img src="img/png/map.png" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75">
       </div>
       <div class="container">
-      <div class="contacts-nerds">
-        <p>Nerds desing studio</p>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.</p>
-        <a href="tel:+78122757575">+7 (812) 275-75-75</a>
-        <a class="btn" href="">Напишите нам</a>
+        <div class="contacts-nerds">
+          <p class="title-text">Nerds desing studio</p>
+          <p class="text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.</p>
+          <a class="tel" href="tel:+78122757575">+7 (812) 275-75-75</a>
+          <a class="btn" href="">Напишите нам</a>
+        </div>
       </div>
-    </div>
     </section>
   </main>
   <footer class="page-footer">
-    <section class="socials">
-      <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="socials-list">
-        <li class="socials-item vk">
-          <a href="https://vk.com" aria-label="Группа Вконтакте"><img src="img/icon/vk-icon.svg" width="26" height="15" alt="Вконтакте">Вконтакте
-          </a>
-        </li>
-        <li class="socials-item fb">
-          <a href="https://facebook.com/" aria-label="Группа в Фейсбук"><img src="img/icon/fb-icon.svg" width="12" height="22" alt="Фейсбук">Фейсбук</a>
-        </li>
-        <li class="socials-item insta">
-          <a href="https://instagram.com/" aria-label="Пост в Инстаграм"><img src="img/icon/insta-icon.svg" width="21" height="21" alt="Инстаграм">Инстаграм</a>
-        </li>
-      </ul>
-    </section>
-    <section class="discounts-friends">
-      <h2 class="visually-hidden">Для друзей</h2>
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </section>
+    <div class="container">
+      <div class="footer-inner">
+        <section class="socials">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <ul class="socials-list">
+            <li class="socials-item vk">
+              <a href="https://vk.com" aria-label="Группа Вконтакте"><img src="img/icon/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a>
+            </li>
+            <li class="socials-item fb">
+              <a href="https://facebook.com/" aria-label="Группа в Фейсбук"><img src="img/icon/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
+            </li>
+            <li class="socials-item insta">
+              <a href="https://instagram.com/" aria-label="Пост в Инстаграм"><img src="img/icon/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a>
+            </li>
+          </ul>
+        </section>
+        <section class="discounts-friends">
+          <h2 class="visually-hidden">Для друзей</h2>
+          <p class="title-text">Давайте дружить, это выгодно!</p>
+          <p class="text">Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+      </div>
+      </div>
   </footer>
   <div class="popup visually-hidden">
     <p>Напишите нам</p>
