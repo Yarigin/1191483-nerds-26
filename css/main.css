@@ -1169,7 +1169,7 @@ a {
 /*  Style popup  */
 
 .popup {
-  position: fixed;
+  position: absolute;
   left: 50%;
   top: 1687px;
   transform: translateX(-50%);
