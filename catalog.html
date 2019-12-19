@@ -38,33 +38,35 @@
         <section class="catalog-sort">
           <h2 class="visually-hidden">Формы сортировки</h2>
           <form class="form-filter" action="" method="post">
-            <fieldset class="form-group">
-              <legend class="form-label">Стоимость:</legend>
-              <ul class="filter-list">
-                <li class="filter-item filter-range">
-                  <input type="range" min="0" max="15000">
-                </li>
-                <li class="filter-item">
-                  <label>От<input class="filter-input" type="text" name="min" value="0"></label>
-                </li>
-                <li class="filter-item">
-                  <label>До<input class="filter-input" type="text" name="max" value="15000"></label>
-                </li>
-              </ul>
+            <fieldset class="filter-item">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="form-group">
               <legend class="form-label">Сетка:</legend>
               <ul class="grid-list">
                 <li class="grid-item">
-                  <input id="adaptive" type="radio" name="select" value="adaptive" checked>
+                  <input class="visually-hidden grid-radio" id="adaptive" type="radio" name="select" value="adaptive" checked>
                   <label for="adaptive">Адаптивная</label>
                 </li>
                 <li class="grid-item">
-                  <input id="fixed" type="radio" name="select" value="fixed">
+                  <input class="visually-hidden grid-radio" id="fixed" type="radio" name="select" value="fixed">
                   <label for="fixed">Фиксированная</label>
                 </li>
                 <li class="grid-item">
-                  <input id="fluid" type="radio" name="select" value="fluid">
+                  <input class="visually-hidden grid-radio" id="fluid" type="radio" name="select" value="fluid">
                   <label for="fluid">Резиновая</label>
                 </li>
               </ul>
@@ -73,23 +75,23 @@
               <legend class="form-label">Особенности:</legend>
               <ul class="features-list">
                 <li class="features-item">
-                  <input id="slider" type="checkbox" name="slider" checked>
+                  <input class="visually-hidden features-checkbox" id="slider" type="checkbox" name="slider" checked>
                   <label for="slider">Слайдер</label>
                 </li>
                 <li class="features-item">
-                  <input id="advantages" type="checkbox" name="advantages">
+                  <input class="visually-hidden features-checkbox" id="advantages" type="checkbox" name="advantages">
                   <label for="advantages">Блок преимуществ</label>
                 </li>
                 <li class="features-item">
-                  <input id="news" type="checkbox" name="news" checked>
+                  <input class="visually-hidden features-checkbox" id="news" type="checkbox" name="news" checked>
                   <label for="news">Новости</label>
                 </li>
                 <li class="features-item">
-                  <input id="gallery" type="checkbox" name="gallery">
+                  <input class="visually-hidden features-checkbox" id="gallery" type="checkbox" name="gallery">
                   <label for="gallery">Галерея</label>
                 </li>
                 <li class="features-item">
-                  <input id="busket" type="checkbox" name="busket">
+                  <input class="visually-hidden features-checkbox" id="busket" type="checkbox" name="busket">
                   <label for="busket">Корзина</label>
                 </li>
               </ul>
@@ -117,60 +119,60 @@
                 <div class="catalog-img-wrap">
                   <img class="card-img" src="img/jpg/img-sedona.jpg" width="360" height="576" alt="Sedona">
                 </div>
-                <div class="info-sedona visually-hidden">
-                  <h3>Sedona</h3>
+                <div class="info-card info-sedona">
+                  <a href=""><h3>Sedona</h3></a>
                   <p>Информационный сайт для туристов</p>
-                  <a href="">9.900 руб.</a>
+                  <a class="btn" href="">9.900 руб.</a>
                 </div>
               </li>
               <li class="catalog-item">
                 <div class="catalog-img-wrap">
                   <img class="card-img" src="img/jpg/img-pink.jpg" width="360" height="576" alt="Pink App">
                 </div>
-                <div class="info-pink visually-hidden">
-                  <h3>Pink App</h3>
+                <div class="info-card">
+                  <a href=""><h3>Pink App</h3></a>
                   <p>Продуктовый лендинг приложения для iOS и Android</p>
-                  <a href="">9.900 руб.</a>
+                  <a class="btn" href="">9.900 руб.</a>
                 </div>
               </li>
               <li class="catalog-item">
                 <div class="catalog-img-wrap">
                   <img class="card-img" src="img/jpg/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
                 </div>
-                <div class="info-barbershop visually-hidden">
-                  <h3>Barbershop</h3>
+                <div class="info-card">
+                  <a href=""><h3>Barbershop</h3></a>
                   <p>Сайт салона красоты. Для мужчин, да.</p>
-                  <a href="">9.900 руб.</a>
+                  <a class="btn" href="">9.900 руб.</a>
                 </div>
               </li>
               <li class="catalog-item">
                 <div class="catalog-img-wrap">
                   <img class="card-img" src="img/jpg/img-mishka.jpg" width="360" height="576" alt="Mishka">
                 </div>
-                <div class="info-mishka visually-hidden">
-                  <h3>Mishka</h3>
+                <div class="info-card">
+                  <a href=""><h3>Mishka</h3></a>
                   <p>Интернет-магазин вязаных игрушек</p>
-                  <a href="">9.900 руб.</a>
+                  <a class="btn" href="">9.900 руб.</a>
                 </div>
               </li>
               <li class="catalog-item">
                 <div class="catalog-img-wrap">
                   <img class="card-img" src="img/jpg/img-aplus.jpg" width="360" height="576" alt="A Plus">
                 </div>
-                <div class="info-plus visually-hidden">
-                  <h3>A Plus</h3>
+                <div class="info-card">
+                  <a href=""><h3>A Plus</h3></a>
                   <p>Лендинг курсов повышения квалификации</p>
-                  <a href="">9.900 руб.</a>
+                  <a class="btn" href="">9.900 руб.</a>
                 </div>
               </li>
               <li class="catalog-item">
                 <div class="catalog-img-wrap">
                   <img class="card-img" src="img/jpg/img-kvast.jpg" width="360" height="576" alt="Кваст">
                 </div>
-                <div class="info-kvast visually-hidden">
-                  <h3>Кваст</h3>
+                <div class="info-card">
+                  <a href=""><h3>Кваст</h3></a>
                   <p>Промо-сайт производителя крафтового кваса</p>
-                  <a href="">9.900 руб.</a>
+                  <a class="btn" href="">9.900 руб.</a>
                 </div>
               </li>
             </ul>
@@ -178,8 +180,8 @@
           <div class="pagination">
             <ul class="pagination-list">
               <li class="pagination-item"><a class="active" href="">1</a></li>
-              <li class="pagination-item"><a class="pagination-link active" href="">2</a></li>
-              <li class="pagination-item"><a class="pagination-link active" href="">3</a></li>
+              <li class="pagination-item"><a class="pagination-link" href="">2</a></li>
+              <li class="pagination-item"><a class="pagination-link" href="">3</a></li>
             </ul>
             <a class="btn" href="" class="next">следующая</a>
           </div>
@@ -208,13 +210,13 @@
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="socials-list">
             <li class="socials-item">
-              <a class="socials-link" href="https://vk.com" aria-label="Группа Вконтакте"><img src="img/icon/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a>
+              <a class="socials-link vk" href="https://vk.com" aria-label="Группа Вконтакте"></a>
             </li>
             <li class="socials-item">
-              <a class="socials-link" href="https://facebook.com" aria-label="Группа в Фейсбук"><img src="img/icon/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
+              <a class="socials-link fb" href="https://facebook.com" aria-label="Группа в Фейсбук"></a>
             </li>
             <li class="socials-item">
-              <a class="socials-link" href="https://instagram.com" aria-label="Пост в Инстаграм"><img src="img/icon/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a>
+              <a class="socials-link insta" href="https://instagram.com" aria-label="Пост в Инстаграм"></a>
             </li>
           </ul>
         </section>
