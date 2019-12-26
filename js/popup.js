@@ -8,14 +8,17 @@ let email = popup.querySelector(".input-email");
 
 btnOn.addEventListener("click", function(evt) {
   evt.preventDefault();
+  popup.classList.remove("popup-off");
   popup.classList.add("popup-on");
   name.focus();
 });
+
 btnOff.addEventListener("click", function(evt){
   evt.preventDefault();
   popup.classList.remove("popup-on");
+  popup.classList.add("popup-off");
   name.classList.remove("input-required");
-  email.classList.remove("input-required")
+  email.classList.remove("input-required");
 });
 
 form.addEventListener("submit", function (evt) {
@@ -38,6 +41,8 @@ window.addEventListener("keydown", function (evt) {
       evt.preventDefault();
       if (popup.classList.contains("popup-on")) {
         popup.classList.remove("popup-on");
+        name.classList.remove("input-required");
+        email.classList.remove("input-required");
       }
     }
   });
