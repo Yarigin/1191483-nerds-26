@@ -216,6 +216,48 @@ a {
   background-color: #eeeeee;
 }
 
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 109px;
+  z-index: 100;
+
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider-controls label {
+  position: relative;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 18px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label::after {
+  content: "";
+
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  z-index: 1;
+
+  width: 19px;
+  height: 19px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+}
+
 .slider-list {
   margin: 0 0 80px 0;
   padding: 0;
@@ -223,11 +265,7 @@ a {
 
 .slider-item {
   display: none;
-  padding: 78px 0 80px 0;
-}
-
-.slider-item:nth-child(1) {
-  display: block;
+  padding: 78px 0 80px 0
 }
 
 .slider-item:nth-child(1) {
@@ -248,6 +286,34 @@ a {
   background-position: 100% 20px;
 }
 
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+  display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
 .slider-item h3 {
   max-width: 600px;
   margin: 0;
@@ -262,42 +328,6 @@ a {
   max-width: 430px;
   margin: 0;
   margin-bottom: 38px;
-}
-
-
-
-.slideshow-controls {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  left: 50%;
-  bottom: 100px;
-  width: 240px;
-  height: 18px;
-  transform: translateX(-50%);
-}
-
-.slideshow-btn {
-  position: relative;
-  display: block;
-  margin: 0 9px;
-  width: 18px;
-  height: 18px;
-  border: 0;
-  border-radius: 50%;
-  background-color: #fff;
-}
-
-.slideshow-btn-active:after {
-  position: absolute;
-  content: "";
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 10px;
-  height: 10px;
-  border: 2px solid #c1c1c1;
-  border-radius: 50%;
 }
 
 .slideshow .btn:hover,
