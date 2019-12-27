@@ -277,11 +277,6 @@ a {
   transform: translateX(-50%);
 }
 
-.slideshow-controls .active {
-  background-image: url(../img/filter-button.svg);
-  background-repeat: no-repeat;
-}
-
 .slideshow-btn {
   position: relative;
   display: block;
@@ -291,6 +286,18 @@ a {
   border: 0;
   border-radius: 50%;
   background-color: #fff;
+}
+
+.slideshow-btn-active:after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
 }
 
 .slideshow .btn:hover,
@@ -939,8 +946,7 @@ iframe {
   transition: 0.35s;
 }
 
-.sort-link:hover
-.sort-link:focus {
+.sort-link:hover .sort-link:focus {
   opacity: 0.6;
 }
 
@@ -1255,14 +1261,18 @@ iframe {
 }
 
 @keyframes slide-left {
-  0% {transform: translate(-50%, -50%);}
+  0% {
+    transform: translate(-50%, -50%);
+  }
 
-  100% {transform: translate(-200%, -50%);}
+  100% {
+    transform: translate(-200%, -50%);
+  }
 }
 
 .popup-on {
   visibility: visible;
-  animation: slide-right  0.5s ease-in-out forwards;
+  animation: slide-right 0.5s ease-in-out forwards;
 }
 
 .popup-off {
@@ -1342,7 +1352,7 @@ iframe {
 }
 
 .input-email:hover {
-   border: solid 2px #b4b9bb;
+  border: solid 2px #b4b9bb;
 }
 
 .input-email:focus {
@@ -1403,7 +1413,7 @@ iframe {
 
 .popup .btn:hover,
 .popup .btn:focus {
-  background-color:  #e74246;
+  background-color: #e74246;
 }
 
 .popup .btn:active {
