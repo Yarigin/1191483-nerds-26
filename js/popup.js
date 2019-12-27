@@ -26,12 +26,14 @@ form.addEventListener("submit", function (evt) {
       evt.preventDefault();
       name.classList.add("input-required");
 } else {
+      name.classList.remove("input-required")
       localStorage.setItem("name", name.value);
     }
     if(!email.value) {
       evt.preventDefault();
       email.classList.add("input-required");
 } else {
+      email.classList.remove("input-required");
       localStorage.setItem("email", email.value);
     }
 });
