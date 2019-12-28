@@ -419,8 +419,8 @@ a {
 
 .info {
   display: flex;
-  margin-bottom: 32px;
-  padding-bottom: 60px;
+  margin-bottom: 44px;
+  padding-bottom: 48px;
   border-bottom: 2px solid #eee;
 }
 
@@ -528,9 +528,9 @@ a {
 .partners-list {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 64px;
+  margin-bottom: 77px;
   padding-left: 0;
-  padding-bottom: 50px;
+  padding-bottom: 36px;
   border-bottom: 2px solid #eee;
 }
 
