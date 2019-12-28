@@ -467,7 +467,7 @@ a {
   content: "";
   position: absolute;
   left: 0;
-  top: 57%;
+  top: 50%;
   transform: translateY(-50%);
   width: 25px;
   height: 2px;
@@ -506,7 +506,7 @@ a {
   margin-right: 22px;
   font-family: roboto;
   font-size: 45px;
-  line-height: 10px;
+  line-height: 1;
   font-weight: 700;
 }
 
@@ -578,7 +578,7 @@ a {
 .barbershop:active,
 .pink:active,
 .mishka:active {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 .route {
@@ -598,8 +598,9 @@ a {
 iframe {
   position: absolute;
   z-index: 20;
-  left: 0;
+  left: 50%;
   top: 0;
+  transform: translateX(-50%);
 }
 
 .contacts-nerds {
@@ -1130,6 +1131,7 @@ iframe {
   width: 50px;
   height: 50px;
   border: 3px solid #eee;
+  border-radius: 5px;
   color: #000;
 }
 
@@ -1139,6 +1141,7 @@ iframe {
   align-items: center;
   width: 50px;
   height: 50px;
+  border-radius: 5px;
   background-color: #eee;
   color: #000;
   transition: 0.35s;
@@ -1236,8 +1239,9 @@ iframe {
 .vk:active,
 .fb:active,
 .insta:active {
-  background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
 }
 
 .discounts-friends {
