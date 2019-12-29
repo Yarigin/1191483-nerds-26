@@ -143,6 +143,7 @@ a {
 }
 
 .navigation-list .active {
+  padding-bottom: 8px;
   border-bottom: 2px solid #fb565a;
 }
 
@@ -673,13 +674,13 @@ iframe {
 }
 
 .catalog-sort {
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
 .title-catalog {
   margin-top: 0;
-  padding-top: 82px;
-  padding-bottom: 116px;
+  padding-top: 68px;
+  padding-bottom: 109px;
   font-family: Roboto;
   font-size: 55px;
   font-weight: 500;
@@ -693,7 +694,6 @@ iframe {
 }
 
 .form-group {
-  margin: 0 0 15px;
   padding: 0;
   width: 260px;
   border: none;
@@ -725,6 +725,7 @@ iframe {
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .range-controls {
@@ -780,9 +781,7 @@ iframe {
 
 .price-controls {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 57px;
-  font-size: 0;
+  margin-bottom: 64px;
 }
 
 .price-controls label {
@@ -796,7 +795,7 @@ iframe {
 .price-controls input {
   width: 80px;
   padding: 8px 10px;
-  margin-left: 10px;
+  margin-left: 8px;
 
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
@@ -815,6 +814,7 @@ iframe {
 
 .grid-list {
   padding-left: 0;
+  margin-bottom: 53px;
   color: #283136;
 }
 
@@ -827,7 +827,7 @@ iframe {
   display: block;
   user-select: none;
   cursor: pointer;
-  padding-left: 40px;
+  padding-left: 36px;
 }
 
 .grid-radio:checked+label::before {
@@ -870,6 +870,7 @@ iframe {
 }
 
 .features-list {
+  margin-bottom: 42px;
   padding-left: 0;
   color: #283136;
 }
@@ -883,7 +884,7 @@ iframe {
   display: block;
   cursor: pointer;
   user-select: none;
-  padding-left: 40px;
+  padding-left: 36px;
 }
 
 .features-checkbox+label::before {
@@ -952,8 +953,9 @@ iframe {
 }
 
 .catalog-inner {
-  width: 766px;
-  margin-left: 130px;
+  min-width: 766px;
+  margin-left: 128px;
+  margin-top: 4px;
 }
 
 .user-sort {
