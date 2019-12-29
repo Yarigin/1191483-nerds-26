@@ -781,7 +781,7 @@ iframe {
 
 .price-controls {
   display: flex;
-  margin-bottom: 64px;
+  margin-bottom: 36px;
 }
 
 .price-controls label {
@@ -814,7 +814,7 @@ iframe {
 
 .grid-list {
   padding-left: 0;
-  margin-bottom: 53px;
+  margin-bottom: 40px;
   color: #283136;
 }
 
@@ -870,7 +870,7 @@ iframe {
 }
 
 .features-list {
-  margin-bottom: 42px;
+  margin-bottom: 44px;
   padding-left: 0;
   color: #283136;
 }
@@ -1041,6 +1041,8 @@ iframe {
 }
 
 .catalog-img-wrap {
+  max-width: 100%;
+  height: 576px;
   position: relative;
 }
 
