@@ -1447,6 +1447,8 @@ iframe {
   color: rgba(68, 68, 68, .5);
   border: 2px solid #d7dcde;
   border-radius: 3px;
+  resize: none;
+  overflow: scroll;
 }
 
 .user-message textarea:hover {
