@@ -8,7 +8,7 @@ let email = popup.querySelector(".input-email");
 
 btnOn.addEventListener("click", function(evt) {
   evt.preventDefault();
-  popup.classList.remove("popup-off");
+  //popup.classList.remove("popup-off");
   popup.classList.add("popup-on");
   name.focus();
 });
@@ -16,7 +16,7 @@ btnOn.addEventListener("click", function(evt) {
 btnOff.addEventListener("click", function(evt){
   evt.preventDefault();
   popup.classList.remove("popup-on");
-  popup.classList.add("popup-off");
+  //popup.classList.add("popup-off");
   name.classList.remove("input-required");
   email.classList.remove("input-required");
 });

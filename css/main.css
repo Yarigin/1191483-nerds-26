@@ -1290,6 +1290,9 @@ iframe {
 
 .popup {
   visibility: hidden;
+  opacity: 0;
+  animation: slide-left 0.4s ease-in-out forwards;
+
   position: fixed;
   left: 50%;
   top: 50%;
@@ -1325,12 +1328,13 @@ iframe {
 
 .popup-on {
   visibility: visible;
+  opacity: 1;
   animation: slide-right 0.5s ease-in-out forwards;
 }
 
-.popup-off {
-  animation: slide-left 0.5s ease-in-out forwards;
-}
+/*.popup-off {
+  animation: slide-left 5s ease-in-out forwards;
+}*/
 
 .popup p {
   margin-top: 0;
@@ -1447,8 +1451,7 @@ iframe {
   color: rgba(68, 68, 68, .5);
   border: 2px solid #d7dcde;
   border-radius: 3px;
-  resize: none;
-  overflow: scroll;
+  resize: vertical;
 }
 
 .user-message textarea:hover {
