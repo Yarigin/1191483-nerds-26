@@ -221,13 +221,13 @@
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="socials-list">
             <li class="socials-item">
-              <a target="_blank" class="socials-link vk" href="https://vk.com" aria-label="Группа Вконтакте"></a>
+              <a target="_blank" class="socials-link vk" href="https://vk.com" aria-label="Группа Вконтакте"><span class="visually-hidden">Вконтакте</span></a>
             </li>
             <li class="socials-item">
-              <a target="_blank" class="socials-link fb" href="https://facebook.com" aria-label="Группа в Фейсбук"></a>
+              <a target="_blank" class="socials-link fb" href="https://facebook.com/" aria-label="Группа в Фейсбук"><span class="visually-hidden">Фейсбук</span></a>
             </li>
             <li class="socials-item">
-              <a target="_blank" class="socials-link insta" href="https://instagram.com" aria-label="Пост в Инстаграм"></a>
+              <a target="_blank" class="socials-link insta" href="https://instagram.com/" aria-label="Пост в Инстаграм"><span class="visually-hidden">Инстаграм</span></a>
             </li>
           </ul>
         </section>
@@ -239,29 +239,28 @@
       </div>
     </div>
   </footer>
- <section class="popup">
-  <h2 class="visually-hidden">Обратная связь</h2>
-  <form class="" action="https://echo.htmlacademy.ru" method="post">
-    <p>Напишите нам</p>
-    <div class="user-date">
-      <div class="user-name">
-        <label for="name">Ваше имя:</label>
-        <input class="input-name" id="name" type="text" name="name" placeholder="Имя Фамилия">
+  <section class="popup">
+    <h2 class="visually-hidden">Обратная связь</h2>
+    <form class="" action="https://echo.htmlacademy.ru" method="post">
+      <p>Напишите нам</p>
+      <div class="user-date">
+        <div class="user-name">
+          <label for="name">Ваше имя:</label>
+          <input class="input-name" id="name" type="text" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="user-email">
+          <label for="email">Ваш e-mail:</label>
+          <input class="input-email" id="email" type="text" name="email" placeholder="email@example.com">
+        </div>
       </div>
-      <div class="user-email">
-        <label for="email">Ваш e-mail:</label>
-        <input class="input-email" id="email" type="text" name="email" placeholder="email@example.com">
+      <div class="user-message">
+        <label for="message">Текст письма:</label>
+        <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
       </div>
-    </div>
-    <div class="user-message">
-      <label for="message">Текст письма:</label>
-      <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
-    </div>
-    <button type="submit" class="btn">Отправить</button>
-    <button type="button" class="popup-close" aria-label="Закрыть"></button>
-  </form>
-</section>
-
+      <button type="submit" class="btn">Отправить</button>
+      <button type="button" class="popup-close" aria-label="Закрыть"></button>
+    </form>
+  </section>
   <script src="js/popup.js"></script>
 </body>
 
