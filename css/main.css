@@ -1503,6 +1503,11 @@ iframe {
   transition: 0.35s;
 }
 
-.popup .popup-close:hover {
+.popup .popup-close:hover,
+.popup .popup-close:focus {
   opacity: 1;
+}
+
+.popup .popup-close:active {
+  opacity: 0.1;
 }
